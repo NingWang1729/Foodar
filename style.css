@@ -31,7 +31,55 @@ p, label{
 	font-size: 1.25em;
 }
 
+label {
+	vertical-align: top;
+
+}
+
+label.first_name {
+	padding-right: 5.7em;
+}
+
+label.email_address {
+	padding-right: 4.3em;
+}
+
+label.street {
+	padding-right: 7.9em;
+}
+
+label.state {
+	padding-right: 8.3em;
+}
+
+input {
+	padding: 1px 3px;
+}
+
 input, select {
 	color: rgb(50, 50, 150);
 	font-size: 1.0em;
+}
+
+select {
+	padding-right: 7.2em;
+}
+
+.about_redirect {
+	font-size: 27px;
+}
+
+footer a {
+	margin-right: 4px;
+}
+
+a.footer, p.footer {
+	margin-top: 3px;
+	margin-bottom: 0px;
+	padding-bottom: 0;
+	font-size: 15px;
+}
+
+ul {
+	margin-top: 0px;
 }
