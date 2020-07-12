@@ -2,6 +2,15 @@
 	background-color: rgb(255, 255, 200);
 }
 
+h1 {
+	margin: 2px 5em;
+	border-style: double;
+	border-width: 2px;
+	border-radius: 4px;
+	border-color: blue;
+	padding: 2px 0px;
+}
+
 #title {
 	font-size: 1.5em;
 }
