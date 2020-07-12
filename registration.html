@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<title> Foodar - Registration </title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+	<header>
+		<nav> <p id="title"> <b> <a id="about_page" href="about.html"> Foodar </a> </b> </p> </nav>
+	</header>
+	<div>
+		<h1> Registration Page</h1>
+		<form method="post" onsubmit="return verify_form()" action="about.html">
+			<fieldset>
+				<legend id="legend"> User Credentials </legend>
+				<label for="first_name"> First Name: </label> <br />
+				<input type="text" name="first_name" id="first_name" value="" required="true"> <br />
+				<label for="last_name"> Last Name: </label> <br />
+				<input type="text" name="last_name" id="last_name" value="" required="true"> <br />
+				<label for="email_address"> Email Address: </label> <br />
+				<input type="email" name="email_address" id="email_address" value="" required="true"> <br />
+				<label for="password"> Password: </label> <br />
+				<input type="password" name="password" id="password" required="true"> <br />
+			</fieldset>
+			<fieldset>
+				<legend id="legend"> User Address </legend>
+				<label for="street"> Street: </label> <br />
+				<input type="text" name="street" id="street" value="" required="true"> <br />
+				<label for="city"> City: </label> <br />
+				<input type="text" name="city" id="city" value="" required="true"> <br />
+				<label for="state" title="Must live in CA, TX, or NY."> State: </label> <br />
+				<select name="state" id="state" value="" title="Must live in CA, TX, or NY.">
+					<option value="">  </option>
+					<option value="CA"> CA </option>
+					<option value="TX"> TX </option>
+					<option value="NY"> NY </option>
+				</select> <br />
+				<label for="zipcode"> Zipcode: </label> <br />
+				<input type="text" name="zipcode" id="zipcode" value="" required="true"> <br />
+			</fieldset>
+				<button type="submit"> Register </button>
+				<button type="reset" onclick="clear_form()"> Clear Fields </button>
+		</form>
+	</div>
+	<script type="text/javascript">
+			function verify_form() {
+				var state = document.getElementById("state");
+				if (state.value == "") {
+					alert("The state should not be blank");
+					return false;
+				} else {
+					alert("Thank you for registering with Foodar!");
+					return true;
+				}
+			}
+			function clear_form() {
+				alert("Form reset!");
+			}
+		</script>
+</body>
+</html>

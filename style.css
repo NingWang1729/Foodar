@@ -1,0 +1,28 @@
+* {
+	background-color: rgb(255, 255, 200);
+}
+
+#title {
+	font-size: 1.5em;
+}
+
+h1 {
+	color: blue;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+h2, #legend{
+	color: green;
+	font-size: 1.75em;
+}
+
+p, label{
+	color: rgb(50, 50, 150);
+	font-size: 1.25em;
+}
+
+input, select {
+	color: rgb(50, 50, 150);
+	font-size: 1.0em;
+}
