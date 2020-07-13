@@ -1,5 +1,3 @@
 # Foodar
 
-Foodar is a sample food delivery website with an about page and a registration page.
-The About Page provides information regarding Foodar and links to the registration page.
-The Registration Page redirects to the About Page once the registration form is complete.
+Foodar is a sample food delivery website. It contains a home page, and about page, and a registration page. The title links to the home page. The footer contains a navbar to each page of the website. It also contains links to the privacy information and terms of service, the pages themselves to be implemented at a later date.
