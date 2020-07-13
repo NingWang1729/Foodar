@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> About Foodar </title>
+		<title> Foodar - Home Page</title>
 		<link rel="stylesheet" href="style.css" type="text/css" />
 	</head>
 	<body>
 		<header>
-			<nav> 
-				<p id="title"> 
-					<b> 
+			<nav>
+				<p class="advertisement">
+					<b>
+						<a id="home_page" href="index.html" class="home_redirect"> Free Food Delivery Services Near You!</a>
+					</b>
+				</p>
+				<p id="title">
+					<b>
 						<a id="home_page" href="index.html" class="home_redirect"> Foodar</a>
+						<a href="registration.html" id="signin_signup"> Sign In/Sign Up</a>
 					</b>
 				</p>
 			</nav>
 		</header>
+		<section>
+			<img src="shrimp_skewer.jpg" height="300" width="33%" />
+			<img src="pizza.jpg" height="300" width="33%" />
+			<img src="burger_and_fries.jpg" height="300" width="33%" />
+		</section>
+		<section>
+			<h2> Find a driver near you! </h2>
+			<p> Enter your zipcode below and hit Go! to find a driver near you! </p>
+			<form method="post">
+				<input type="number" name="zipcode" min=10000 max=99999 required="true" title="Must live in CA, TX, or NY" value="">
+				<button type="submit"> Go! </button>
+			</form>
+		</section>
 	</body>
-	<section>
-		<h1> How it works! </h1>
-		<h2> Register for an account </h2>
-		<p> The first thing you need to do is <a id="registration_page" href="registration.html">register</a> for an account. After registering, you will be able to submit requests for pickup and have your food delivered to your door! </p>
-		<br />
-		<h2> Order your food </h2>
-		<p> Place an order for food from a local restaurant and the system will automatically find the nearest driver at the best cost. </p>
-		<br />
-		<h2> Confirm your request </h2>
-		<p> Before any request is submitted, you have the chance to review it and make any changes or cancellations. </p>
-	</section>
+	<br />
 	<footer>
 		<table>
 			<thead>

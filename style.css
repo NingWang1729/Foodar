@@ -30,6 +30,10 @@ p, label{
 	color: rgb(50, 50, 150);
 	font-size: 1.25em;
 }
+p.advertisement {
+	text-align: center;
+	background-color: green;
+}
 
 label {
 	vertical-align: top;
@@ -65,7 +69,7 @@ select {
 	padding-right: 7.2em;
 }
 
-.about_redirect {
+.home_redirect {
 	font-size: 27px;
 }
 
@@ -80,6 +84,18 @@ a.footer, p.footer {
 	font-size: 15px;
 }
 
-ul {
-	margin-top: 0px;
+table {
+	width: 100%;
+}
+
+td.left {
+	padding-left: 10px;
+}
+
+td.center {
+	text-align: center;
+}
+
+#signin_signup {
+	margin-left: 46em;
 }
