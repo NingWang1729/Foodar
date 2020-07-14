@@ -99,3 +99,19 @@ td.center {
 #signin_signup {
 	margin-left: 46em;
 }
+
+a:visited {
+	color: purple;
+}
+
+a:hover {
+	color: blues;
+}
+
+a:active {
+	color: green;
+}
+
+a {
+	text-decoration: none;
+}
