@@ -75,9 +75,6 @@ function open_ad() {
 			close.addEventListener("click", close_ad);
 			close.innerHTML = "x";
 			close.style.marginLeft = "99%";
-			// close.style.borderWidth = "0px";
-			// close.borderColor = "none";
-
 
 			var bold = document.createElement("b");
 			var link = document.createElement("a");
@@ -89,7 +86,6 @@ function open_ad() {
 			link.innerHTML = "Free Food Delivery Services Near You!";
 			bold.appendChild(link);
 			ad.appendChild(bold);
-
 
 			header[0].insertBefore(ad, header[0].childNodes[0]);
 			header[0].insertBefore(close, header[0].childNodes[0]);
