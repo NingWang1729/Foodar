@@ -30,6 +30,7 @@ p, label{
 	color: rgb(50, 50, 150);
 	font-size: 1.25em;
 }
+
 p.advertisement {
 	text-align: center;
 	background-color: green;
@@ -114,4 +115,15 @@ a:active {
 
 a {
 	text-decoration: none;
+}
+
+td#meal, td#tip {
+	width: 33%;
+	padding-left: 10px;
+	border: 1px solid blue;
+	text-align: center;
+}
+
+table#meal, table#tip {
+	border-spacing: 25px;
 }

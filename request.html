@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Request Preview</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<p id="title">
+					<b>
+						<a id="home_page" href="index.html" class="home_redirect"> Foodar</a>
+					</b>
+				</p>
+			</nav>
+		</header>
+		<h1>Submit your request</h1>
+		<br />
+		<h2>Please submit your request below</h2>
+
+		<form method="post" action="index.html">
+			<label for="address" style="color: green">Address</label>
+			<br />
+			<input type="text" name="address" id="address" required="true" value="someone@email.com" style="color: gray" onclick="input_color(this.id)">
+			<br />
+			<br />
+			<br />
+			<label for="meal" style="color: green"> Choose your meal:</label>
+			<br />
+			<table id="meal">
+				<tr>
+					<td id="meal">
+						<label for="shrimp_skewers"> Shrimp Skewers </label>
+						<br />
+						<label for="shrimp_skewers"> $8 per entry </label>
+						<br />
+						<input type="radio" id="shrimp_skewers" name="meal" required="true" onclick="order_cost()">
+					</td>
+					<td id="meal">
+						<label for="pizza"> Pizza </label>
+						<br />
+						<label for="pizza"> $12 per entry </label>
+						<br />
+						<input type="radio" id="pizza" name="meal" required="true" onclick="order_cost()">
+					</td>
+					<td id="meal">
+						<label for="burger_and_fries"> Burger and Fries </label>
+						<br />
+						<label for="burger_and_fries"> $10 per entry </label>
+						<br />
+						<input type="radio" id="burger_and_fries" name="meal" required="true" onclick="order_cost()">
+					</td>
+				</tr>
+			</table>
+			<br />
+			<label for="restaurant" style="color: green">Restaurant</label>
+			<br />
+			<input type="text" name="address" id="restaurant" required="true" value="Favorite kitchen" style="color: gray" onclick="input_color(this.id)">
+			<br />
+			<br />
+			<br />
+			<label for="tip" style="color: green"> Choose your tip size:</label>
+			<br />
+			<table id="tip">
+				<tr>
+					<td id="tip">
+						<label for="small"> 5% Tip: </label>
+						<br />
+						<label for="small"> They did their job!</label>
+						<br />
+						<input type="radio" id="small" name="tip" required="true" onclick="order_cost()">
+					</td>
+					<td id="tip">
+						<label for="medium"> 15% Tip: </label>
+						<br />
+						<label for="medium"> They did their job well!</label>
+						<br />
+						<input type="radio" id="medium" name="tip" required="true" onclick="order_cost()">
+					</td>
+					<td id="tip">
+						<label for="large"> 25% Tip: </label>
+						<br />
+						<label for="large"> They did their job great!</label>
+						<br />
+						<input type="radio" id="large" name="tip" required="true" onclick="order_cost()">
+					</td>
+				</tr>
+			</table>
+			<br />
+			<h2>
+				<p id="order_cost" style="text-align: center"> Your order costs: </p>
+			</h2>
+			<br />
+			<button type="submit" onmouseover="order_cost()"> Request </button>
+			<button type="reset" onclick="order_cost(reset)"> Reset </button>
+		</form>
+	</body>
+	<footer>
+		<table>
+			<thead>
+				<p class="footer"> Site Navigator And Directory: </p>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="left" width="520px">
+						<a href="index.html" class="footer"> Home Page </a>
+					</td>
+					<td class="center">
+						<a href="index.html" class="footer"> Privacy Policy </a>
+					</td>
+					<td class="center">
+						<p class="footer"> Thank you for eating with Foodar! </p>
+					</td>
+				</tr>
+				<tr>
+					<td class="left" width="520px">
+						<a href="about2.html" class="footer"> About Page </a>
+					</td>
+					<td class="center">
+						<a href="index.html" class="footer"> Terms and Conditions </a>
+					</td>
+				</tr>
+				<tr>
+					<td class="left" width="520px">
+						<a href="registration.html" class="footer"> Registration Page</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="left" width="520px">
+						<a href="request.html" class="footer"> Request Page</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="left" width="520px">
+						<p class="footer"> &copy; Ning Wang 2020 </p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</footer>
+	<script type="text/javascript" src="script.js"></script>
+</html>
