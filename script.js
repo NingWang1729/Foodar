@@ -29,14 +29,14 @@ function order_cost(reset) {
 	var cost = 0.00;
 	var food_menu = document.getElementsByTagName("input");
 	for (var i = 0; i < food_menu.length; i++) {
-		if (food_menu[i].id == "shrimp_skewers" && food_menu[i].checked == true) {
-			console.log("Checking skewers");
-			cost = 8.00;
-		} else if (food_menu[i].id == "pizza" && food_menu[i].checked == true) {
-			console.log("Checking pizza");
-			cost = 12.00;
-		} else if (food_menu[i].id == "burger_and_fries" && food_menu[i].checked  == true) {
-			console.log("Checking borger");
+		if (food_menu[i].id == "classic" && food_menu[i].checked == true) {
+			console.log("Checking classic");
+			cost = 3.00;
+		} else if (food_menu[i].id == "premium" && food_menu[i].checked == true) {
+			console.log("Checking premium");
+			cost = 5.00;
+		} else if (food_menu[i].id == "royal" && food_menu[i].checked  == true) {
+			console.log("Checking premium");
 			cost = 10.00;
 		} 
 		if (food_menu[i].id == "small"  && food_menu[i].checked == true) {
@@ -61,39 +61,49 @@ function order_cost(reset) {
 }
 
 function open_ad() {
-			var header = document.getElementsByTagName("header");
-			console.log(header[0]);
+	var header = document.getElementsByTagName("header");
+	console.log(header[0]);
 
-			var ad = document.createElement("p");
-			ad.style.textAlign = "center";
-			ad.style.backgroundColor = "green";
-			ad.class = "advertisement";
-			ad.style.marginTop = "0px";
+	var ad = document.createElement("p");
+	ad.style.textAlign = "center";
+	ad.style.backgroundColor = "green";
+	ad.class = "advertisement";
+	ad.style.marginTop = "0px";
 
-			var close = document.createElement("button");
-			close.type = "button";
-			close.addEventListener("click", close_ad);
-			close.innerHTML = "x";
-			close.style.marginLeft = "99%";
+	var close = document.createElement("button");
+	close.type = "button";
+	close.addEventListener("click", close_ad);
+	close.innerHTML = "x";
+	close.style.marginLeft = "99%";
 
-			var bold = document.createElement("b");
-			var link = document.createElement("a");
-			link.style.paddingTop = "2px";
-			link.style.paddingBottom = "2px";
-			link.id = "home_page";
-			link.href = "index.html";
-			link.class = "home_redirect";
-			link.innerHTML = "Free Food Delivery Services Near You!";
-			bold.appendChild(link);
-			ad.appendChild(bold);
+	var bold = document.createElement("b");
+	var link = document.createElement("a");
+	link.style.paddingTop = "2px";
+	link.style.paddingBottom = "2px";
+	link.id = "home_page";
+	link.href = "https://www.duckduckgo.com";
+	link.class = "home_redirect";
+	link.innerHTML = "Free Food Delivery Services Near You!";
+	bold.appendChild(link);
+	ad.appendChild(bold);
 
-			header[0].insertBefore(ad, header[0].childNodes[0]);
-			header[0].insertBefore(close, header[0].childNodes[0]);
-		}
+	header[0].insertBefore(ad, header[0].childNodes[0]);
+	header[0].insertBefore(close, header[0].childNodes[0]);
+}
 
 function close_ad() {
 	alert("Here we go again");
 	var header = document.getElementsByTagName("header");
 	header[0].removeChild(header[0].childNodes[0]);
 	header[0].removeChild(header[0].childNodes[0]);
+}
+
+function zipcodeVerifier() {
+	var zipcode = document.getElementsByTagName("input")[0].value;
+	if (zipcode <= 20000) {
+		alert("Invalid Zipcode!");
+	} else {
+		alert("Valid Zipcode!")
+	}
+	return zipcode > 20000;
 }

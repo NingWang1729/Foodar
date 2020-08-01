@@ -16,16 +16,16 @@
 			</nav>
 		</header>
 		<section>
-			<img src="shrimp_skewer.jpg" height="300" width="33%" />
-			<img src="pizza.jpg" height="300" width="33%" />
-			<img src="burger_and_fries.jpg" height="300" width="33%" />
+			<img src="shrimp_skewer.jpg" height="300" width="33%" title="Enter Code: SHRIMP_SKEWER for a 10% discount!" />
+			<img src="pizza.jpg" height="300" width="33%" title="Enter Code: PIZZA_TIME for a 10% discount!" />
+			<img src="burger_and_fries.jpg" height="300" width="33%" title="Enter Code: BORGER_MEAL for a 10% discount!" />
 		</section>
 		<section>
 			<h2> Find a driver near you! </h2>
 			<p> Enter your zipcode below and hit Go! to find a driver near you! </p>
-			<form method="post">
+			<form method="post" onsubmit="return zipcodeVerifier()">
 				<input type="number" name="zipcode" min=10000 max=99999 required="true" title="Must live in CA, TX, or NY" value="">
-				<button type="submit"> Go! </button>
+				<button id="zipcode" type="submit"> Go! </button>
 			</form>
 		</section>
 	</body>
